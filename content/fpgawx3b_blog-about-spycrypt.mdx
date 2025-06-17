@@ -1,0 +1,49 @@
+---
+title: "SpyCrypt: Real-Time Crypto Price Monitor with GitHub Actions"
+publishedAt: "2025-06-17"
+summary: "SpyCrypt is a lightweight, GitHub-powered cryptocurrency price monitor that fetches real-time data from CoinGecko and updates automatically via GitHub Actions."
+---
+
+# 📈 SpyCrypt: GitHub-Powered Crypto Price Monitor
+
+**SpyCrypt** is a simple and effective way to monitor real-time cryptocurrency prices directly from your GitHub repository.  
+It fetches up-to-date prices for **BTC**, **ETH**, **SOL**, and **USDT** using the CoinGecko API, and keeps the data refreshed automatically using **GitHub Actions**.
+
+---
+
+## 🚀 Features
+
+- ⛓️ Powered by [CoinGecko API](https://www.coingecko.com/)
+- 🔁 Auto-refresh via **GitHub Actions**
+- 💾 Saves data into versioned JSON files
+- 🔍 Tracks prices for:  
+  - Bitcoin (BTC)  
+  - Ethereum (ETH)  
+  - Solana (SOL)  
+  - Tether (USDT)
+- 🔓 Fully open-source and easy to fork
+
+---
+
+## ⚙️ How It Works
+
+SpyCrypt is built entirely with **JavaScript** and hosted on GitHub. Here's what it does:
+
+1. **Fetches current prices** from CoinGecko
+2. **Writes them to a JSON file**
+3. **Commits & pushes** the update to the repository via GitHub Actions
+4. **Runs every few minutes**, thanks to a scheduled workflow
+
+You can view the data live in the repo or use it in other applications.
+
+---
+
+## 🛠 Setup Your Own Version
+
+Want to use or fork it?
+
+```bash
+git clone https://github.com/superti4r/spycrypt
+cd spycrypt
+npm install
+node scripts/ambil-kurs.js

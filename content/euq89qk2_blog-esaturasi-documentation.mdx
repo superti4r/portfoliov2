@@ -1,0 +1,70 @@
+---
+title: "E-Saturasi Docs"
+publishedAt: "2025-06-17"
+summary: "An introduction to eSaturasi, a modern Laravel 12-based school progress management system built with Filament and TailwindCSS 4."
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/superti4r/esaturasi/refs/heads/main/public/esaturasi-header.svg" alt="project-image" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-8.4-brightgreen" alt="shields" />
+  <img src="https://img.shields.io/badge/Laravel-12-red?logo=laravel&logoColor=white" alt="shields" />
+  <img src="https://img.shields.io/badge/Filament-3.3-6366f1?logo=laravel&logoColor=white" alt="shields" />
+  <img src="https://img.shields.io/badge/Tailwind-4-06b6d4?logo=tailwindcss&logoColor=white" alt="shields" />
+</p>
+
+---
+
+# 🎓 E-Saturasi: Student Progress Management Made Modern
+
+Welcome to **E-Saturasi** — a Laravel 12-based student progress management system tailored for schools and special education environments. Built with modern tools like **Filament v3**, **Tailwind CSS v4**, and **Spatie Permission**, it simplifies daily operations for teachers, students, and administrators alike.
+
+---
+
+## 🧩 Features at a Glance
+
+Here’s what you can do with eSaturasi:
+
+- Manage **Users (Teachers & Students)**
+- Organize **Departments & Classes**
+- Set and view **Schedules**
+- Configure **Roles & Permissions**
+- Handle **Materials & Assignments**
+- Generate **PDF Reports**
+- Grade **Student Assignments**
+
+---
+
+## ⚙️ Installation Guide
+
+Getting started is easy! Just follow these steps in your terminal:
+
+```bash
+# 1. Copy environment file
+cp .env.example .env
+
+# 2. Install dependencies
+composer install
+
+# 3. Generate application key
+php artisan key:generate
+
+# 4. Create symbolic link for storage
+php artisan storage:link
+
+# 5. Run database migrations
+php artisan migrate
+
+# 6. Generate default permissions
+php artisan shield:generate --all
+
+# 7. Create your first Filament user
+php artisan make:filament-user
+
+# 8. Promote user to Administrator (super admin)
+php artisan shield:super-admin --user=1 --panel=m
+
+# 9. Serve the application
+php artisan serve
